@@ -5,5 +5,7 @@
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
 	<sub-flow name="sub_flowSub_Flow" doc:id="437ef2c2-f8d9-4442-8624-84e7ba59c786" >
 		<logger level="INFO" doc:name="Logger" doc:id="ee15cf46-9a9e-4334-b7ab-cd34c449a8d2" message="hey this subflow"/>
+		<logger level="INFO" doc:name="Logger" doc:id="0d7ec5d9-3359-4605-905c-0f6664a6d208" message="hey"/>
+		<logger level="INFO" doc:name="Logger" doc:id="df8bda44-3155-437c-9ff8-95355813b449" message="flow end"/>
 	</sub-flow>
 </mule>
