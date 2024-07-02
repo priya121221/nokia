@@ -6,6 +6,8 @@
 	<flow name="private_flowFlow" doc:id="08b90d13-d669-4ab0-9500-152f45d2f973" >
 		<logger level="INFO" doc:name="private" doc:id="7fc06b82-8445-4f4a-9988-1ecc95f4d1ff" message="this is private flow"/>
 		<logger level="INFO" doc:name="Logger" doc:id="fba2ef78-37a4-4fba-b181-166ca37ad250" message="hi"/>
+		<logger level="INFO" doc:name="Logger" doc:id="fba2ef78-37a4-4fba-b181-166ca37ad250" message="weclome"/>
+		<logger level="INFO" doc:name="Logger" doc:id="fba2ef78-37a4-4fba-b181-166ca37ad250" message="thank you"/>
 		<logger level="INFO" doc:name="Logger" doc:id="461e50ec-a66c-4182-935f-cb0e5ff326bf" message="hello"/>
 		<logger level="INFO" doc:name="Logger" doc:id="aa44a598-8804-4c5e-b00c-49fb930343b6" message="end flow"/>
 	</flow>
