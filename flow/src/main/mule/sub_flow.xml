@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<sub-flow name="sub_flowSub_Flow" doc:id="437ef2c2-f8d9-4442-8624-84e7ba59c786" >
+		<logger level="INFO" doc:name="Logger" doc:id="ee15cf46-9a9e-4334-b7ab-cd34c449a8d2" message="hey this subflow"/>
+	</sub-flow>
+</mule>

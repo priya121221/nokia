@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="bf9690df-e233-4e93-9185-699c89c0b707" >
+		<http:listener-connection host="localhost" port="8084" />
+	</http:listener-config>
+	<flow name="flowFlow" doc:id="c55654cc-22aa-4346-8228-8ac5fc9cb23c" >
+		<http:listener doc:name="Listener" doc:id="9fc4c2e4-59a0-4f07-ae6d-7dfef8c9689e" config-ref="HTTP_Listener_config" path="/flow"/>
+		<logger level="INFO" doc:name="flow statred" doc:id="7917c393-6d90-41cc-a1bf-dc314c1295a3" message="hey  flow stared"/>
+		<flow-ref doc:name="private" doc:id="09857770-c710-4f92-805a-146868ff270c" name="private_flowFlow"/>
+		<logger level="INFO" doc:name="2 flow" doc:id="b4cfb311-e99f-4b6b-8ebd-cb279fd96b43" message="this is the 2 flow "/>
+		<flow-ref doc:name="sub flow" doc:id="f6b8d598-30b8-4fde-8fa9-5748da5f0f58" name="sub_flowSub_Flow"/>
+		<logger level="INFO" doc:name="end flow" doc:id="accd6476-497e-4034-83f8-a5b652b3d3c2" message="flow ended"/>
+	</flow>
+</mule>
